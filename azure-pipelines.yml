@@ -37,3 +37,7 @@ stages:
         platform: '$(buildPlatform)'
         configuration: '$(buildConfiguration)'
     - task: PublishBuildArtifacts@1
+- stage: "Release"
+  jobs:
+    - job: "ReleaseJobs"
+      
